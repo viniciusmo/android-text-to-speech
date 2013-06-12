@@ -31,10 +31,18 @@ public class TranslatorTest {
 	}
 
 	@Test
-	public void testTranslateFailTextUsingPTBRtoEN() {
+	public void testTranslateFailTextUsingENtoPTBR() {
 		String expected = "asdadasdasdasdasdasd";
 		String actual = Translator.translate(Language.ENGLISH,
 				Language.PORTUGUESE_BR, "asdadasdasdasdasdasd");
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	public void testTranslateSimplePhraseUsingPTBRtoEN() {
+		String expected = "I like to read newspapers";
+		String actual = Translator.translate(Language.PORTUGUESE_BR,
+				Language.ENGLISH, "gosto de ler jornais");
 		assertEquals(expected, actual);
 	}
 
