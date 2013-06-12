@@ -1,5 +1,6 @@
 package com.viniciusmo.androidtextspeech;
 
+import com.viniciusmo.androidtextspeech.parser.ParserTextDetect;
 import com.viniciusmo.androidtextspeech.parser.ParserTextTranslate;
 import com.viniciusmo.androidtextspeech.utils.WebUtils;
 
@@ -13,7 +14,9 @@ public class Translator {
 		return parseable.getTextTranslated();
 	}
 
-	public static Language detect() {
+	public static Language detect(String text) {
+		ParserTextDetect parseable = new ParserTextDetect(text);
+		WebUtils.doContent(parseable);
 		return Language.AFRIKAANS;
 	}
 

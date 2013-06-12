@@ -50,4 +50,9 @@ public class TranslatorTest {
 	public void testTranslateEmptyString() {
 		Translator.translate(Language.ENGLISH, Language.PORTUGUESE_BR, "");
 	}
+
+	@Test
+	public void testMain() {
+		Translator.detect("eu sou programador");
+	}
 }

@@ -5,6 +5,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.viniciusmo.androidtextspeech.Language;
+import com.viniciusmo.androidtextspeech.utils.EncodeUtils;
 import com.viniciusmo.androidtextspeech.utils.URLGoogleAPI;
 
 public class ParserTextTranslate implements Parseable {
@@ -38,14 +39,11 @@ public class ParserTextTranslate implements Parseable {
 		}
 	}
 
-	private String encodeTextTranslateParam() {
-		return textForTranslate.replace(" ", "%20");
-	}
-
 	public String getUrl() {
 		String format = URLGoogleAPI.TRANSLATE_TEXT.getUrl();
 		String url = String.format(format, from.getPrefix(), from.getPrefix(),
-				to.getPrefix(), encodeTextTranslateParam());
+				to.getPrefix(),
+				EncodeUtils.encodeWhiteSpaceText(textForTranslate));
 		return url;
 	}
 
