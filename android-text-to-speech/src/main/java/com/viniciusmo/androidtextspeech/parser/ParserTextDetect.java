@@ -1,6 +1,6 @@
 package com.viniciusmo.androidtextspeech.parser;
 
-import com.viniciusmo.androidtextspeech.utils.EncodeUtils;
+import com.viniciusmo.androidtextspeech.utils.Encoder;
 import com.viniciusmo.androidtextspeech.utils.URLGoogleAPI;
 
 public class ParserTextDetect implements Parseable {
@@ -10,14 +10,14 @@ public class ParserTextDetect implements Parseable {
 		this.text = text;
 	}
 
-	public void doParse(String content) {
+	private void doParse(String content) {
 		System.out.println(content);
 	}
 
 	public String getUrl() {
+		doParse(null);
 		String format = URLGoogleAPI.TRANSLATE_DETECT.getUrl();
-		String url = String.format(format,
-				EncodeUtils.encodeWhiteSpaceText(text));
+		String url = String.format(format, Encoder.encodeWhiteSpaceText(text));
 		System.out.println(url);
 		return url;
 	}

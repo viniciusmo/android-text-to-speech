@@ -5,8 +5,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.viniciusmo.androidtextspeech.Language;
-import com.viniciusmo.androidtextspeech.utils.EncodeUtils;
+import com.viniciusmo.androidtextspeech.utils.Encoder;
 import com.viniciusmo.androidtextspeech.utils.URLGoogleAPI;
+import com.viniciusmo.androidtextspeech.utils.WebClient;
 
 public class ParserTextTranslate implements Parseable {
 
@@ -29,7 +30,7 @@ public class ParserTextTranslate implements Parseable {
 		return text;
 	}
 
-	public void doParse(String content) {
+	private void doParse(String content) {
 		try {
 			JSONObject jObject = new JSONObject(content);
 			JSONArray sentences = (JSONArray) jObject.get("sentences");
@@ -42,12 +43,13 @@ public class ParserTextTranslate implements Parseable {
 	public String getUrl() {
 		String format = URLGoogleAPI.TRANSLATE_TEXT.getUrl();
 		String url = String.format(format, from.getPrefix(), from.getPrefix(),
-				to.getPrefix(),
-				EncodeUtils.encodeWhiteSpaceText(textForTranslate));
+				to.getPrefix(), Encoder.encodeWhiteSpaceText(textForTranslate));
 		return url;
 	}
 
 	public String getTextTranslated() {
+		String content = WebClient.getContent(getUrl());
+		doParse(content);
 		return textTranslated;
 	}
 

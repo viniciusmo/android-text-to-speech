@@ -8,35 +8,29 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
-import com.viniciusmo.androidtextspeech.parser.Parseable;
+public class WebClient {
 
-public class WebUtils {
-
-	public static void doContent(Parseable parseable) {
+	public static String getContent(String urlSite) {
 		StringBuilder result = new StringBuilder();
-
 		URL url;
 		URLConnection urlConn;
-
 		try {
-			url = new URL(parseable.getUrl());
+			url = new URL(urlSite);
 			urlConn = url.openConnection();
 			urlConn.addRequestProperty("User-Agent",
 					"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)");
 			Reader reader = new InputStreamReader(urlConn.getInputStream(),
 					"utf-8");
 			BufferedReader br = new BufferedReader(reader);
-
 			int byteRead;
 			while ((byteRead = br.read()) != -1)
 				result.append((char) byteRead);
-
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		parseable.doParse(result.toString());
+		return result.toString();
 	}
 
 }
