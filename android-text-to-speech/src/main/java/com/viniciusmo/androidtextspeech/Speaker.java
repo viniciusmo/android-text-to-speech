@@ -1,7 +1,14 @@
 package com.viniciusmo.androidtextspeech;
 
-public class Speaker {
-	public static void speack() {
+import java.io.InputStream;
 
+public class Speaker {
+
+	public static void speack(String text, Language from) {
+		
+	}
+
+	public static InputStream getInputStream(String text, Language from) {
+		return null;
 	}
 }

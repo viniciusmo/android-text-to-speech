@@ -1,4 +1,4 @@
-package com.viniciusmo.androidtextspeech.parser;
+package com.viniciusmo.androidtextspeech.translate;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -9,15 +9,14 @@ import com.viniciusmo.androidtextspeech.web.Encoder;
 import com.viniciusmo.androidtextspeech.web.URLGoogleAPI;
 import com.viniciusmo.androidtextspeech.web.WebClient;
 
-public class TextTranslate implements Parseable {
+public class TranslatorText implements Translatable {
 
 	private Language from;
 	private Language to;
 	private String textForTranslate;
 	private String textTranslated;
 
-	public TextTranslate(Language from, Language to,
-			String textForTranslate) {
+	public TranslatorText(Language from, Language to, String textForTranslate) {
 		this.from = from;
 		this.to = to;
 		this.textForTranslate = verifyTextIsEmpty(textForTranslate);
@@ -36,7 +35,7 @@ public class TextTranslate implements Parseable {
 			JSONArray sentences = (JSONArray) jObject.get("sentences");
 			textTranslated = (String) sentences.getJSONObject(0).get("trans");
 		} catch (JSONException e) {
-			throw new ParserException();
+			throw new TranslateException();
 		}
 	}
 
@@ -47,7 +46,7 @@ public class TextTranslate implements Parseable {
 		return url;
 	}
 
-	public String getTextTranslated() {
+	public String translateText() {
 		String content = WebClient.getContent(getUrl());
 		doParse(content);
 		return textTranslated;
