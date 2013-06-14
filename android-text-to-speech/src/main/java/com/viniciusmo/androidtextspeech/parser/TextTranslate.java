@@ -5,18 +5,18 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.viniciusmo.androidtextspeech.Language;
-import com.viniciusmo.androidtextspeech.utils.Encoder;
-import com.viniciusmo.androidtextspeech.utils.URLGoogleAPI;
-import com.viniciusmo.androidtextspeech.utils.WebClient;
+import com.viniciusmo.androidtextspeech.web.Encoder;
+import com.viniciusmo.androidtextspeech.web.URLGoogleAPI;
+import com.viniciusmo.androidtextspeech.web.WebClient;
 
-public class ParserTextTranslate implements Parseable {
+public class TextTranslate implements Parseable {
 
 	private Language from;
 	private Language to;
 	private String textForTranslate;
 	private String textTranslated;
 
-	public ParserTextTranslate(Language from, Language to,
+	public TextTranslate(Language from, Language to,
 			String textForTranslate) {
 		this.from = from;
 		this.to = to;

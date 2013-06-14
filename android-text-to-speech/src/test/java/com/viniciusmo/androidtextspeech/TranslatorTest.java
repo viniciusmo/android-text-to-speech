@@ -39,7 +39,7 @@ public class TranslatorTest {
 	}
 
 	@Test
-	public void testTranslateSimplePhraseUsingPTBRtoEN() {
+	public void testTranslateShortPhraseUsingPTBRtoEN() {
 		String expected = "I like to read newspapers";
 		String actual = Translator.translate(Language.PORTUGUESE_BR,
 				Language.ENGLISH, "gosto de ler jornais");
@@ -51,8 +51,4 @@ public class TranslatorTest {
 		Translator.translate(Language.ENGLISH, Language.PORTUGUESE_BR, "");
 	}
 
-	@Test
-	public void testMain() {
-		Translator.detect("eu sou programador");
-	}
 }

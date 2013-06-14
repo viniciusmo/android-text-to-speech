@@ -1,4 +1,4 @@
-package com.viniciusmo.androidtextspeech.utils;
+package com.viniciusmo.androidtextspeech.web;
 
 public class Encoder {
 

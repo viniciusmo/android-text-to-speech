@@ -1,12 +1,12 @@
 package com.viniciusmo.androidtextspeech;
 
-import com.viniciusmo.androidtextspeech.parser.ParserTextTranslate;
+import com.viniciusmo.androidtextspeech.parser.TextTranslate;
 
 public class Translator {
 
 	public static String translate(Language from, Language to,
 			String textForTranslate) {
-		ParserTextTranslate parseable = new ParserTextTranslate(from, to,
+		TextTranslate parseable = new TextTranslate(from, to,
 				textForTranslate);
 		return parseable.getTextTranslated();
 	}
