@@ -5,3 +5,10 @@ Enables using Google Translate from a Android application
 
 Download here  [android-text-to-speech](http://example.net/) 
 =============
+
+Translating a Text
+=============	
+    String expected = "chair";
+    String actual = Translator.translate(Language.PORTUGUESE_BR,
+    Language.ENGLISH, "cadeira");
+
