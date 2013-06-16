@@ -3,7 +3,7 @@ android-text-to-speech
 
 Enables using Google Translate from a Android application
 
-Download here  [android-text-to-speech](https://github.com/viniciusmo/android-text-to-speech/blob/master/android-text-to-speech/target/android-text-to-speech-1.0.0-SNAPSHOT.jar?raw=true) 
+Download here  [android-text-to-speech](https://github.com/viniciusmo/android-text-to-speech/blob/master/android-text-to-speech/target/android-text-to-speech-1.0.0.jar?raw=true) 
 =============
 
 Translating a Text
