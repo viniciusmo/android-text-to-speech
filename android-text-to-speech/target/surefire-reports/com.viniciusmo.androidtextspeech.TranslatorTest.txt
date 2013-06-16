@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.viniciusmo.androidtextspeech.AppTest
+Test set: com.viniciusmo.androidtextspeech.TranslatorTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.467 sec

@@ -1,22 +1,27 @@
 package com.viniciusmo.androidtextspeech;
 
-import java.io.InputStream;
-
 import android.content.Context;
 
-import com.viniciusmo.androidtextspeech.player.PlayerStream;
+import com.viniciusmo.androidtextspeech.translate.OnCompleteLoad;
 import com.viniciusmo.androidtextspeech.translate.TranslatorSpeech;
 
 public class Speaker {
 
-	public static void speack(String text, Language from, Context context) {
+	public static void speack(final String text, final Language from,
+			final Context context) {
 		TranslatorSpeech translatorSpeech = new TranslatorSpeech(text, from);
-		PlayerStream playerStream = new PlayerStream(context);
-		InputStream inputStream = translatorSpeech.translate();
-		playerStream.play(inputStream);
+		translatorSpeech.speack();
 	}
 
-	public static InputStream getInputStream(String text, Language from) {
-		return null;
+	public static void speack(final String text, final Language from,
+			final Context context, final OnCompleteLoad onCompleteLoad) {
+		new Thread() {
+			public void run() {
+				TranslatorSpeech translatorSpeech = new TranslatorSpeech(text,
+						from);
+				translatorSpeech.speack();
+				onCompleteLoad.onCompleteLoaded();
+			}
+		}.start();
 	}
 }

@@ -1,14 +1,17 @@
 package com.viniciusmo.androidtextspeech.translate;
 
-import java.io.InputStream;
+import java.io.IOException;
+
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 
 import com.viniciusmo.androidtextspeech.Language;
 import com.viniciusmo.androidtextspeech.web.Encoder;
 import com.viniciusmo.androidtextspeech.web.URLGoogleAPI;
-import com.viniciusmo.androidtextspeech.web.WebClient;
 
 public class TranslatorSpeech implements Translatable {
 	private String text;
+	@SuppressWarnings("unused")
 	private Language from;
 
 	public TranslatorSpeech(String text, Language from) {
@@ -16,14 +19,22 @@ public class TranslatorSpeech implements Translatable {
 	}
 
 	public String getUrl() {
-		String format = URLGoogleAPI.TRANSLATE_DETECT.getUrl();
+		String format = URLGoogleAPI.TRANSLATE_AUDIO.getUrl();
 		String textEncoded = Encoder.encodeWhiteSpaceText(text);
-		String url = String.format(format, textEncoded, from.getPrefix());
+		String url = String.format(format, textEncoded, "pt-BR");
 		return url;
 	}
 
-	public InputStream translate() {
-		InputStream speech = WebClient.getInputStream(getUrl());
-		return speech;
+	public void speack() {
+		try {
+			MediaPlayer mediaPlayer = new MediaPlayer();
+			mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+			mediaPlayer.setDataSource(getUrl());
+			mediaPlayer.prepare();
+			mediaPlayer.start();
+		} catch (IOException e) {
+			throw new TranslateException();
+		}
+
 	}
 }
