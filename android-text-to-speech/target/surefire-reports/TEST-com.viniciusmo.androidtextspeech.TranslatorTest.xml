@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="2.468" errors="0" skipped="0" tests="6" name="com.viniciusmo.androidtextspeech.TranslatorTest">
+<testsuite failures="0" time="2.483" errors="0" skipped="0" tests="6" name="com.viniciusmo.androidtextspeech.TranslatorTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -27,7 +27,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/viniciusmo/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.core/launches/m2conf4704205027191350208.tmp"/>
+    <property name="classworlds.conf" value="/Users/viniciusmo/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.core/launches/m2conf4606376923063541552.tmp"/>
     <property name="sun.jnu.encoding" value="MacRoman"/>
     <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -64,10 +64,10 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="1.093" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateCadeiraForChairUsingPTBRtoEN"/>
-  <testcase time="0.314" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateChairForCadeiraUsingENtoPTBR"/>
-  <testcase time="0.322" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateChairForCadeiraUsingPTBRtoEN"/>
-  <testcase time="0.344" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateFailTextUsingENtoPTBR"/>
-  <testcase time="0.335" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateShortPhraseUsingPTBRtoEN"/>
-  <testcase time="0.003" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateEmptyString"/>
+  <testcase time="0.796" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateCadeiraForChairUsingPTBRtoEN"/>
+  <testcase time="0.258" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateChairForCadeiraUsingENtoPTBR"/>
+  <testcase time="0.348" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateChairForCadeiraUsingPTBRtoEN"/>
+  <testcase time="0.395" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateFailTextUsingENtoPTBR"/>
+  <testcase time="0.359" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateShortPhraseUsingPTBRtoEN"/>
+  <testcase time="0.001" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateEmptyString"/>
 </testsuite>
