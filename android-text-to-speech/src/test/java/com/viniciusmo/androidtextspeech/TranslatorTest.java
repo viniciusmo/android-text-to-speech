@@ -15,6 +15,14 @@ public class TranslatorTest {
 	}
 
 	@Test
+	public void testTranslateCadeiraUsingPTBRtoChineseSimplified() {
+		String expected = "椅子";
+		String actual = Translator.translate(Language.PORTUGUESE_BR,
+				Language.CHINESE_SIMPLIFIED, "cadeira");
+		assertEquals(expected, actual);
+	}
+
+	@Test
 	public void testTranslateChairForCadeiraUsingENtoPTBR() {
 		String expected = "chair";
 		String actual = Translator.translate(Language.PORTUGUESE_BR,
