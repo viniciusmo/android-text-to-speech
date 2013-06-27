@@ -1,12 +1,12 @@
 package com.viniciusmo.androidtextspeech.translate;
 
 import java.io.IOException;
+import java.net.URLEncoder;
 
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 
 import com.viniciusmo.androidtextspeech.Language;
-import com.viniciusmo.androidtextspeech.web.Encoder;
 import com.viniciusmo.androidtextspeech.web.URLGoogleAPI;
 
 public class TranslatorSpeech implements Translatable {
@@ -18,9 +18,10 @@ public class TranslatorSpeech implements Translatable {
 		this.text = text;
 	}
 
+	@SuppressWarnings("deprecation")
 	public String getUrl() {
 		String format = URLGoogleAPI.TRANSLATE_AUDIO.getUrl();
-		String textEncoded = Encoder.encodeWhiteSpaceText(text);
+		String textEncoded = URLEncoder.encode(text);
 		String url = String.format(format, textEncoded, "pt-BR");
 		return url;
 	}

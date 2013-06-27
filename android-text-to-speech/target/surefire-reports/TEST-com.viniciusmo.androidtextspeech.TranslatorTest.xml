@@ -1,73 +1,296 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="2.483" errors="0" skipped="0" tests="6" name="com.viniciusmo.androidtextspeech.TranslatorTest">
+<testsuite failures="6" time="1.727" errors="0" skipped="0" tests="7" name="com.viniciusmo.androidtextspeech.TranslatorTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
-    <property name="java.vm.version" value="20.12-b01-434"/>
+    <property name="java.vm.version" value="20.45-b01-451"/>
     <property name="awt.nativeDoubleBuffering" value="true"/>
     <property name="gopherProxySet" value="false"/>
-    <property name="mrj.build" value="11M3909"/>
+    <property name="mrj.build" value="11M4406"/>
     <property name="java.vm.vendor" value="Apple Inc."/>
     <property name="java.vendor.url" value="http://www.apple.com/"/>
     <property name="path.separator" value=":"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.country" value="US"/>
+    <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/viniciusmo/MyProjects/android-text-to-speech-and-translate/android-text-to-speech"/>
-    <property name="java.runtime.version" value="1.6.0_37-b06-434-11M3909"/>
+    <property name="user.dir" value="/Users/admin/MyProjects/android-text-to-speech-and-translate/android-text-to-speech"/>
+    <property name="java.runtime.version" value="1.6.0_45-b06-451-11M4406"/>
     <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment"/>
+    <property name="basedir" value="/Users/admin/MyProjects/android-text-to-speech-and-translate/android-text-to-speech"/>
     <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/59/12fw6p5d0_lcbtvt3c8m8hvr0000gn/T/"/>
+    <property name="surefire.real.class.path" value="/Users/admin/MyProjects/android-text-to-speech-and-translate/android-text-to-speech/target/surefire/surefirebooter4459247803804877654.jar"/>
+    <property name="java.io.tmpdir" value="/var/folders/gs/21smns_n4fd_tcyq0hmwdzs40000gn/T/"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/viniciusmo/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.core/launches/m2conf4606376923063541552.tmp"/>
     <property name="sun.jnu.encoding" value="MacRoman"/>
     <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="surefire.test.class.path" value="/Users/admin/MyProjects/android-text-to-speech-and-translate/android-text-to-speech/target/test-classes:/Users/admin/MyProjects/android-text-to-speech-and-translate/android-text-to-speech/target/classes:/Users/admin/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar:/Users/admin/.m2/repository/com/google/android/android/2.3.1/android-2.3.1.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/org/khronos/opengl-api/gl1.1-android-2.1_r1/opengl-api-gl1.1-android-2.1_r1.jar:/Users/admin/.m2/repository/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar:/Users/admin/.m2/repository/xpp3/xpp3/1.1.4c/xpp3-1.1.4c.jar:/Users/admin/.m2/repository/org/json/json/20080701/json-20080701.jar:"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="50.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.8.2"/>
+    <property name="os.version" value="10.7.5"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="user.home" value="/Users/viniciusmo"/>
-    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="user.home" value="/Users/admin"/>
+    <property name="user.timezone" value=""/>
     <property name="java.awt.printerjob" value="apple.awt.CPrinterJob"/>
     <property name="java.specification.version" value="1.6"/>
     <property name="file.encoding" value="MacRoman"/>
-    <property name="user.name" value="viniciusmo"/>
-    <property name="java.class.path" value="/Applications/eclipse/configuration/org.eclipse.osgi/bundles/278/1/.cp/jars/plexus-classworlds-2.4.jar"/>
+    <property name="user.name" value="admin"/>
+    <property name="java.class.path" value="/Users/admin/MyProjects/android-text-to-speech-and-translate/android-text-to-speech/target/test-classes:/Users/admin/MyProjects/android-text-to-speech-and-translate/android-text-to-speech/target/classes:/Users/admin/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar:/Users/admin/.m2/repository/com/google/android/android/2.3.1/android-2.3.1.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/org/khronos/opengl-api/gl1.1-android-2.1_r1/opengl-api-gl1.1-android-2.1_r1.jar:/Users/admin/.m2/repository/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar:/Users/admin/.m2/repository/xpp3/xpp3/1.1.4c/xpp3-1.1.4c.jar:/Users/admin/.m2/repository/org/json/json/20080701/json-20080701.jar:"/>
     <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="sun.java.command" value="/Users/admin/MyProjects/android-text-to-speech-and-translate/android-text-to-speech/target/surefire/surefirebooter4459247803804877654.jar /Users/admin/MyProjects/android-text-to-speech-and-translate/android-text-to-speech/target/surefire/surefire7423833046508409000tmp /Users/admin/MyProjects/android-text-to-speech-and-translate/android-text-to-speech/target/surefire/surefire6105963041550773708tmp"/>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
-    <property name="user.language" value="en"/>
+    <property name="user.language" value="pt"/>
     <property name="awt.toolkit" value="apple.awt.CToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.6.0_37"/>
+    <property name="java.version" value="1.6.0_45"/>
     <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext"/>
     <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar"/>
     <property name="java.vendor" value="Apple Inc."/>
-    <property name="maven.home" value="/Users/viniciusmo/MyProjects/android-text-to-speech-and-translate/android-text-to-speech/EMBEDDED"/>
+    <property name="localRepository" value="/Users/admin/.m2/repository"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.apple.com/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="mrj.version" value="1070.1.6.0_37-434"/>
+    <property name="mrj.version" value="1070.1.6.0_45-451"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.796" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateCadeiraForChairUsingPTBRtoEN"/>
-  <testcase time="0.258" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateChairForCadeiraUsingENtoPTBR"/>
-  <testcase time="0.348" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateChairForCadeiraUsingPTBRtoEN"/>
-  <testcase time="0.395" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateFailTextUsingENtoPTBR"/>
-  <testcase time="0.359" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateShortPhraseUsingPTBRtoEN"/>
-  <testcase time="0.001" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateEmptyString"/>
+  <testcase time="0.669" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateCadeiraForChairUsingPTBRtoEN">
+    <failure message="expected:&lt;[chair]&gt; but was:&lt;[ok]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[chair]&gt; but was:&lt;[ok]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:123)
+	at org.junit.Assert.assertEquals(Assert.java:145)
+	at com.viniciusmo.androidtextspeech.TranslatorTest.testTranslateCadeiraForChairUsingPTBRtoEN(TranslatorTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:146)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</failure>
+    <system-out>@HL
+@HL-------------------------------------------------------
+@HL T E S T S
+@HL-------------------------------------------------------
+@SLRunning com.viniciusmo.androidtextspeech.TranslatorTest
+{&quot;dict&quot;:[{&quot;entry&quot;:[{&quot;score&quot;:0.720272958,&quot;reverse_translation&quot;:[&quot;cadeira&quot;,&quot;presidência&quot;,&quot;cadeirinha&quot;,&quot;coxim&quot;],&quot;word&quot;:&quot;chair&quot;,&quot;synset_id&quot;:[0]},{&quot;score&quot;:0.0600546673,&quot;reverse_translation&quot;:[&quot;assento&quot;,&quot;banco&quot;,&quot;lugar&quot;,&quot;cadeira&quot;,&quot;poltrona&quot;,&quot;selim&quot;],&quot;word&quot;:&quot;seat&quot;},{&quot;score&quot;:0.00366335828,&quot;reverse_translation&quot;:[&quot;sujeito&quot;,&quot;assunto&quot;,&quot;indivíduo&quot;,&quot;pessoa&quot;,&quot;tópico&quot;,&quot;cadeira&quot;],&quot;word&quot;:&quot;subject&quot;},{&quot;score&quot;:3.00706743E-4,&quot;reverse_translation&quot;:[&quot;cadeira&quot;],&quot;word&quot;:&quot;professorship&quot;,&quot;synset_id&quot;:[0]},{&quot;score&quot;:2.34190651E-4,&quot;reverse_translation&quot;:[&quot;cadeira&quot;],&quot;word&quot;:&quot;sunbed&quot;},{&quot;score&quot;:1.71337539E-4,&quot;reverse_translation&quot;:[&quot;cómoda&quot;,&quot;cadeira&quot;,&quot;pequeno guarda-roupa&quot;],&quot;word&quot;:&quot;commode&quot;},{&quot;score&quot;:1.00724144E-4,&quot;reverse_translation&quot;:[&quot;tenda&quot;,&quot;barraca&quot;,&quot;baia&quot;,&quot;estábulo&quot;,&quot;cocheira&quot;,&quot;cadeira&quot;],&quot;word&quot;:&quot;stall&quot;},{&quot;score&quot;:2.50722223E-5,&quot;reverse_translation&quot;:[&quot;professorado&quot;,&quot;classe dos professores&quot;,&quot;cadeira&quot;],&quot;word&quot;:&quot;professorate&quot;},{&quot;score&quot;:8.01356327E-6,&quot;reverse_translation&quot;:[&quot;professorado&quot;,&quot;cadeira&quot;],&quot;word&quot;:&quot;professoriate&quot;}],&quot;terms&quot;:[&quot;chair&quot;,&quot;seat&quot;,&quot;subject&quot;,&quot;professorship&quot;,&quot;sunbed&quot;,&quot;commode&quot;,&quot;stall&quot;,&quot;professorate&quot;,&quot;professoriate&quot;],&quot;base_form&quot;:&quot;cadeira&quot;,&quot;pos&quot;:&quot;substantivo&quot;}],&quot;sentences&quot;:[{&quot;trans&quot;:&quot;chair&quot;,&quot;translit&quot;:&quot;&quot;,&quot;src_translit&quot;:&quot;&quot;,&quot;orig&quot;:&quot;cadeira&quot;}],&quot;server_time&quot;:4,&quot;src&quot;:&quot;pt&quot;}
+</system-out>
+  </testcase>
+  <testcase time="0.168" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateCadeiraUsingPTBRtoChineseSimplified">
+    <failure message="expected:&lt;[椅子]&gt; but was:&lt;[ok]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[椅子]&gt; but was:&lt;[ok]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:123)
+	at org.junit.Assert.assertEquals(Assert.java:145)
+	at com.viniciusmo.androidtextspeech.TranslatorTest.testTranslateCadeiraUsingPTBRtoChineseSimplified(TranslatorTest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:146)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</failure>
+    <system-out>{&quot;sentences&quot;:[{&quot;trans&quot;:&quot;??&quot;,&quot;translit&quot;:&quot;Y?zi&quot;,&quot;src_translit&quot;:&quot;&quot;,&quot;orig&quot;:&quot;cadeira&quot;}],&quot;server_time&quot;:15,&quot;src&quot;:&quot;pt&quot;}
+</system-out>
+  </testcase>
+  <testcase time="0.174" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateChairForCadeiraUsingENtoPTBR">
+    <failure message="expected:&lt;[chair]&gt; but was:&lt;[ok]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[chair]&gt; but was:&lt;[ok]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:123)
+	at org.junit.Assert.assertEquals(Assert.java:145)
+	at com.viniciusmo.androidtextspeech.TranslatorTest.testTranslateChairForCadeiraUsingENtoPTBR(TranslatorTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:146)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</failure>
+    <system-out>{&quot;dict&quot;:[{&quot;entry&quot;:[{&quot;score&quot;:0.720272958,&quot;reverse_translation&quot;:[&quot;cadeira&quot;,&quot;presidência&quot;,&quot;cadeirinha&quot;,&quot;coxim&quot;],&quot;word&quot;:&quot;chair&quot;,&quot;synset_id&quot;:[0]},{&quot;score&quot;:0.0600546673,&quot;reverse_translation&quot;:[&quot;assento&quot;,&quot;banco&quot;,&quot;lugar&quot;,&quot;cadeira&quot;,&quot;poltrona&quot;,&quot;selim&quot;],&quot;word&quot;:&quot;seat&quot;},{&quot;score&quot;:0.00366335828,&quot;reverse_translation&quot;:[&quot;sujeito&quot;,&quot;assunto&quot;,&quot;indivíduo&quot;,&quot;pessoa&quot;,&quot;tópico&quot;,&quot;cadeira&quot;],&quot;word&quot;:&quot;subject&quot;},{&quot;score&quot;:3.00706743E-4,&quot;reverse_translation&quot;:[&quot;cadeira&quot;],&quot;word&quot;:&quot;professorship&quot;,&quot;synset_id&quot;:[0]},{&quot;score&quot;:2.34190651E-4,&quot;reverse_translation&quot;:[&quot;cadeira&quot;],&quot;word&quot;:&quot;sunbed&quot;},{&quot;score&quot;:1.71337539E-4,&quot;reverse_translation&quot;:[&quot;cómoda&quot;,&quot;cadeira&quot;,&quot;pequeno guarda-roupa&quot;],&quot;word&quot;:&quot;commode&quot;},{&quot;score&quot;:1.00724144E-4,&quot;reverse_translation&quot;:[&quot;tenda&quot;,&quot;barraca&quot;,&quot;baia&quot;,&quot;estábulo&quot;,&quot;cocheira&quot;,&quot;cadeira&quot;],&quot;word&quot;:&quot;stall&quot;},{&quot;score&quot;:2.50722223E-5,&quot;reverse_translation&quot;:[&quot;professorado&quot;,&quot;classe dos professores&quot;,&quot;cadeira&quot;],&quot;word&quot;:&quot;professorate&quot;},{&quot;score&quot;:8.01356327E-6,&quot;reverse_translation&quot;:[&quot;professorado&quot;,&quot;cadeira&quot;],&quot;word&quot;:&quot;professoriate&quot;}],&quot;terms&quot;:[&quot;chair&quot;,&quot;seat&quot;,&quot;subject&quot;,&quot;professorship&quot;,&quot;sunbed&quot;,&quot;commode&quot;,&quot;stall&quot;,&quot;professorate&quot;,&quot;professoriate&quot;],&quot;base_form&quot;:&quot;cadeira&quot;,&quot;pos&quot;:&quot;substantivo&quot;}],&quot;sentences&quot;:[{&quot;trans&quot;:&quot;chair&quot;,&quot;translit&quot;:&quot;&quot;,&quot;src_translit&quot;:&quot;&quot;,&quot;orig&quot;:&quot;cadeira&quot;}],&quot;server_time&quot;:3,&quot;src&quot;:&quot;pt&quot;}
+</system-out>
+  </testcase>
+  <testcase time="0.155" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateChairForCadeiraUsingPTBRtoEN">
+    <failure message="expected:&lt;[cadeira]&gt; but was:&lt;[ok]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[cadeira]&gt; but was:&lt;[ok]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:123)
+	at org.junit.Assert.assertEquals(Assert.java:145)
+	at com.viniciusmo.androidtextspeech.TranslatorTest.testTranslateChairForCadeiraUsingPTBRtoEN(TranslatorTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:146)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</failure>
+    <system-out>{&quot;dict&quot;:[{&quot;entry&quot;:[{&quot;score&quot;:0.552252471,&quot;reverse_translation&quot;:[&quot;chair&quot;,&quot;seat&quot;,&quot;subject&quot;,&quot;professorship&quot;,&quot;sunbed&quot;,&quot;commode&quot;],&quot;word&quot;:&quot;cadeira&quot;},{&quot;score&quot;:0.0250345096,&quot;reverse_translation&quot;:[&quot;presidency&quot;,&quot;chair&quot;,&quot;chairmanship&quot;,&quot;presidentship&quot;],&quot;word&quot;:&quot;presidência&quot;},{&quot;score&quot;:0.00128595973,&quot;reverse_translation&quot;:[&quot;chair&quot;,&quot;sedan chair&quot;,&quot;lady chair&quot;],&quot;word&quot;:&quot;cadeirinha&quot;},{&quot;score&quot;:6.74809735E-6,&quot;reverse_translation&quot;:[&quot;cushion&quot;,&quot;pad&quot;,&quot;bolster&quot;,&quot;squab&quot;,&quot;axle box&quot;,&quot;chair&quot;],&quot;word&quot;:&quot;coxim&quot;}],&quot;terms&quot;:[&quot;cadeira&quot;,&quot;presidência&quot;,&quot;cadeirinha&quot;,&quot;coxim&quot;],&quot;base_form&quot;:&quot;chair&quot;,&quot;pos&quot;:&quot;noun&quot;},{&quot;entry&quot;:[{&quot;score&quot;:6.96230472E-6,&quot;reverse_translation&quot;:[&quot;chair&quot;],&quot;word&quot;:&quot;eleger presidente&quot;},{&quot;score&quot;:6.96230472E-6,&quot;reverse_translation&quot;:[&quot;chair&quot;],&quot;word&quot;:&quot;guarnecer com coxins&quot;},{&quot;score&quot;:6.85436407E-6,&quot;reverse_translation&quot;:[&quot;chair&quot;],&quot;word&quot;:&quot;levar em triunfo&quot;}],&quot;terms&quot;:[&quot;eleger presidente&quot;,&quot;guarnecer com coxins&quot;,&quot;levar em triunfo&quot;],&quot;base_form&quot;:&quot;chair&quot;,&quot;pos&quot;:&quot;verb&quot;}],&quot;sentences&quot;:[{&quot;trans&quot;:&quot;cadeira&quot;,&quot;translit&quot;:&quot;&quot;,&quot;src_translit&quot;:&quot;&quot;,&quot;orig&quot;:&quot;chair&quot;}],&quot;server_time&quot;:2,&quot;src&quot;:&quot;en&quot;}
+</system-out>
+  </testcase>
+  <testcase time="0.24" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateFailTextUsingENtoPTBR">
+    <failure message="expected:&lt;[asdadasdasdasdasdasd]&gt; but was:&lt;[ok]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[asdadasdasdasdasdasd]&gt; but was:&lt;[ok]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:123)
+	at org.junit.Assert.assertEquals(Assert.java:145)
+	at com.viniciusmo.androidtextspeech.TranslatorTest.testTranslateFailTextUsingENtoPTBR(TranslatorTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:146)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</failure>
+    <system-out>{&quot;sentences&quot;:[{&quot;trans&quot;:&quot;asdadasdasdasdasdasd&quot;,&quot;translit&quot;:&quot;&quot;,&quot;src_translit&quot;:&quot;&quot;,&quot;orig&quot;:&quot;asdadasdasdasdasdasd&quot;}],&quot;server_time&quot;:88,&quot;src&quot;:&quot;en&quot;,&quot;spell&quot;:{&quot;spell_html_res&quot;:&quot;&lt;b&gt;&lt;i&gt;asdasdasdasdasdasdasd&lt;\/i&gt;&lt;\/b&gt;&quot;,&quot;correction_type&quot;:[1],&quot;spell_res&quot;:&quot;asdasdasdasdasdasdasd&quot;}}
+</system-out>
+  </testcase>
+  <testcase time="0.218" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateShortPhraseUsingPTBRtoEN">
+    <failure message="expected:&lt;[I like to read newspapers]&gt; but was:&lt;[ok]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[I like to read newspapers]&gt; but was:&lt;[ok]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:123)
+	at org.junit.Assert.assertEquals(Assert.java:145)
+	at com.viniciusmo.androidtextspeech.TranslatorTest.testTranslateShortPhraseUsingPTBRtoEN(TranslatorTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:146)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</failure>
+    <system-out>{&quot;sentences&quot;:[{&quot;trans&quot;:&quot;I like to read newspapers&quot;,&quot;translit&quot;:&quot;&quot;,&quot;src_translit&quot;:&quot;&quot;,&quot;orig&quot;:&quot;gosto de ler jornais&quot;}],&quot;server_time&quot;:68,&quot;src&quot;:&quot;pt&quot;}
+</system-out>
+  </testcase>
+  <testcase time="0" classname="com.viniciusmo.androidtextspeech.TranslatorTest" name="testTranslateEmptyString"/>
 </testsuite>
