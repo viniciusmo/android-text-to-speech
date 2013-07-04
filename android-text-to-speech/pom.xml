@@ -4,7 +4,7 @@
 
 	<groupId>com.viniciusmo</groupId>
 	<artifactId>android-text-to-speech</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>android-text-to-speech</name>

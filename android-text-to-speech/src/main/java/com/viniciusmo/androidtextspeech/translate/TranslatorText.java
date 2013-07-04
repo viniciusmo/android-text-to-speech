@@ -17,7 +17,7 @@ public class TranslatorText implements Translatable {
 	private Language from;
 	private Language to;
 	private String textForTranslate;
-	private String textTranslated;
+	private StringBuilder textTranslated;
 
 	public TranslatorText(Language from, Language to, String textForTranslate) {
 		this.from = from;
@@ -47,7 +47,7 @@ public class TranslatorText implements Translatable {
 		JSONArray sentences = jsonArray.getJSONArray(0);
 		for (int i = 0; i < sentences.length(); i++) {
 			JSONArray sentence = sentences.getJSONArray(i);
-			textTranslated += sentence.get(0).toString();
+			textTranslated.append(sentence.get(0).toString());
 		}
 	}
 
@@ -66,11 +66,11 @@ public class TranslatorText implements Translatable {
 	}
 
 	public String translateText() {
-		textTranslated = new String();
+		textTranslated = new StringBuilder();
 		List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
 		nameValuePairs.add(new BasicNameValuePair("q", textForTranslate));
 		String content = WebClient.doPost(getUrl(), nameValuePairs);
 		doParse(content);
-		return textTranslated;
+		return textTranslated.toString();
 	}
 }
