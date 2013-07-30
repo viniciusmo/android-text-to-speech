@@ -26,5 +26,14 @@ public enum Language {
 	public String getPrefix() {
 		return prefix;
 	}
+	
+	public static Language fromString(String prefix){
+		for(Language l : EnumSet.allOf(Language.class)){
+			if(l.getPrefix().equalsIgnoreCase(prefix)){
+				return l;
+			}
+		}
+		return null;
+	}
 
 }
