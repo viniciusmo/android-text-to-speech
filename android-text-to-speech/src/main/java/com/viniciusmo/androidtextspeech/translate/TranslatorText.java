@@ -14,8 +14,8 @@ import com.viniciusmo.androidtextspeech.web.WebClient;
 
 public class TranslatorText implements Translatable {
 
-	private Language from;
-	private Language to;
+	private Language from = Language.ENGLISH;
+	private Language to = Language.ENGLISH;
 	private String textForTranslate;
 	private StringBuilder textTranslated;
 

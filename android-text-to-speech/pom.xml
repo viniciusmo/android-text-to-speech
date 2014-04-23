@@ -4,7 +4,7 @@
 
 	<groupId>com.viniciusmo</groupId>
 	<artifactId>android-text-to-speech</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>android-text-to-speech</name>
@@ -13,6 +13,19 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.15</version>
+				<configuration>
+					<argLine>-Dfile.encoding=UTF-8</argLine>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 	<dependencies>
 		<dependency>
@@ -28,4 +41,5 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+
 </project>
