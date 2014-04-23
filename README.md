@@ -3,7 +3,7 @@ android-text-to-speech
 
 Enables using Google Translate from a Android application
 
-Download last version [here](https://github.com/viniciusmo/android-text-to-speech/blob/master/android-text-to-speech/target/android-text-to-speech.jar?raw=true) 
+Download last version [here](https://github.com/viniciusmo/android-text-to-speech/blob/master/android-text-to-speech/target/android-text-to-speech.jar?raw=true)
 =============
 
 Translating a Text
@@ -11,6 +11,7 @@ Translating a Text
     String expected = "chair";
     String actual = Translator.translate(Language.PORTUGUESE_BR,
     Language.ENGLISH, "cadeira");
+    System.out.println(actual); //chair
 
 Speaking a Text
 =============   
