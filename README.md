@@ -7,22 +7,32 @@ Download last version [here](https://github.com/viniciusmo/android-text-to-speec
 =============
 
 Translating a Text
-=============	
+=============   
     String expected = "chair";
     String actual = Translator.translate(Language.PORTUGUESE_BR,
     Language.ENGLISH, "cadeira");
 
 Speaking a Text
-=============	
+=============   
     Context context = this;
     OnCompleteLoad onCompleteLoad = new OnCompleteLoad() {
     
-    		@Override
-	    	public void onCompleteLoaded() {
-    			System.out.println("Finish speack");
-    		}
+            @Override
+            public void onCompleteLoaded() {
+                System.out.println("Finish speack");
+            }
     };
     Speaker.speack(textForSpeech, Language.PORTUGUESE_BR, context,onCompleteLoad);
+
+## Changelog
+> **1.0.0**
+> 
+> - Translate text into different languages
+> - Speech text into different languages
+
+> **1.0.1**
+> 
+> - Fix bug when text has special characters
 
 ## License
 
