@@ -23,7 +23,7 @@ Speaking a Text
                 System.out.println("Finish speack");
             }
     };
-    Speaker.speack(textForSpeech, Language.PORTUGUESE_BR, context,onCompleteLoad);
+    Speaker.speak(textForSpeech, Language.PORTUGUESE_BR, context,onCompleteLoad);
 
 ## Changelog
 > **1.0.0**
