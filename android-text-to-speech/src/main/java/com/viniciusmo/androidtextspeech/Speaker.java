@@ -7,13 +7,13 @@ import com.viniciusmo.androidtextspeech.translate.TranslatorSpeech;
 
 public class Speaker {
 
-	public static void speack(final String text, final Language from,
+	public static void speak(final String text, final Language from,
 			final Context context) {
 		TranslatorSpeech translatorSpeech = new TranslatorSpeech(text, from);
 		translatorSpeech.speack();
 	}
 
-	public static void speack(final String text, final Language from,
+	public static void speak(final String text, final Language from,
 			final Context context, final OnCompleteLoad onCompleteLoad) {
 		new Thread() {
 			public void run() {

@@ -28,7 +28,7 @@ public enum Language {
 	}
 	
 	public static Language fromString(String prefix){
-		for(Language l : EnumSet.allOf(Language.class)){
+		for(Language l : Language.values()){
 			if(l.getPrefix().equalsIgnoreCase(prefix)){
 				return l;
 			}

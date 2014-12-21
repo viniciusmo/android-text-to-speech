@@ -91,7 +91,7 @@ public class TranslatorTest {
 
 	@Test
 	public void testTranslateShortPhraseUsingPTBRtoEN() {
-		String expected = "I like to read newspapers";
+		String expected = "like reading newspapers";
 		String actual = Translator.translate(Language.PORTUGUESE_BR,
 				Language.ENGLISH, "gosto de ler jornais");
 		assertEquals(expected, actual);
