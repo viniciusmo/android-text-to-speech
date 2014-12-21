@@ -34,6 +34,10 @@ Speaking a Text
 > **1.0.1**
 > 
 > - Fix bug when text has special characters
+> **2.0.0**
+> 
+> - Fix bugs
+> - Renaming methods e updating unit testings
 
 ## License
 
