@@ -1,5 +1,6 @@
 android-text-to-speech
 ====================================
+[![CI Status](https://api.travis-ci.org/viniciusmo/android-text-to-speech.svg)](https://travis-ci.org/viniciusmo/android-text-to-speech)
 
 Enables using Google Translate from a Android application
 
